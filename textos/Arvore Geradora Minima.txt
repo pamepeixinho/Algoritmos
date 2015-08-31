@@ -1,0 +1,6 @@
+Uma arvore geradora de um grafo contém os mesmos vértices que ele. Quando dita mínima, ela é aquela que minimiza o somatório do peso de suas arestas, dentre todas as geradoras. Podem existir mais de uma MST relativas a cada grafo.
+Existem três algoritmos que encontram a MST, o de Prim (1), o de Kruskall (2) e o de Boruvka (3).
+
+1 - Prim
+2 - Kruskall
+3 - Boruvka

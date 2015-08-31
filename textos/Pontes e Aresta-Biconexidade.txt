@@ -1,0 +1,3 @@
+Para grafos, é dita ponte aquela aresta que, caso removida, aumenta em um o grau de desconexidade. Aquele grafo que não possui pontes é dito aresta-biconexo; para cada partição de dois componentes deste grafo existem no mínimo duas arestas que os conectam. O algoritmo (1) calcula o número de pontes de um grafo.
+
+1 - grafoPontes

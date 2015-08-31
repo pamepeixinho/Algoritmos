@@ -1,0 +1,5 @@
+Determinar os componentes cujos vértices estão de alguma maneira conectados, bem como o grau de desconexidade do digrafo.
+Para grafos, é solucionado por uma simples busca em profundidade (1) ou largura (2). Para digrafos, adicione os arcos necessários para transforma-lo em um grafo.
+
+1 - componentesDFS
+2 - componentesBFS

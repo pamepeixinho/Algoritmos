@@ -1,0 +1,5 @@
+Encontrar em um digrafo um ciclo ou o classificá-lo como acíclico (1).
+No caso de grafos, é necessário ignorar os ciclos triviais formados por arestas paralelas (2).
+
+1 - digrafoCiclo
+2 - grafoCiclo

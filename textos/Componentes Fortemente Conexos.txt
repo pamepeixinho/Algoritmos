@@ -1,0 +1,5 @@
+Um componente (ou um digrafo inteiro) é dito fortemente conexo se, entre cada par de vértices (u, w), existe ao menos um caminho que vai de u para w e outro que vai de w para u.
+Este problema é solucionado pelos algoritmos de Kosaraju-Sharir (1) e de Tarjan (2).
+
+1 - kosarajuSharir
+2 - tarjan

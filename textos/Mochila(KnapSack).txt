@@ -1,0 +1,6 @@
+Um ladrão encontra um arranjo de itens, cada um com o seu valor e peso, mas sua mochila só aguenta carregar um roubo de até certo peso. Como otimizar o valor do roubo, respeitando a restrição do peso?
+Na versão ilimitada (1), cada item pode ser escolhido infinitas vezes. Já na limitada (2), existe uma certa quantidade disponível de cada item; um caso particular é a mochila 0-1 (3), onde só existe um espécime de cada item.
+
+1 - knapSackIlimitado
+2 - knapSackLimitado
+3 - knapSack0-1

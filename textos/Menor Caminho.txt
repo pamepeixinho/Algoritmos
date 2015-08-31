@@ -1,0 +1,17 @@
+Consiste em encontrar o caminho entre um par de vértices que minimiza a soma do peso de suas arestas (ou arcos).
+Na maioria dos casos, oque realmente importa é o peso desse certo caminho (distancia entre os vértices).
+
+Existem várias variações, listadas abaixo da mais simples e específica à mais complexa e genérica:
+A partir de um vértice, digrafo sem ponderação: BFS (1).
+A partir de um vértice, digrafo acíclico: Processamento em ordem topológica (2).
+A partir de um vértice, ponderação estritamente positiva: Dijkstra (3). (Se a ponderação pertencer a um intervalo conhecido suficientemente pequeno, é possível uma otimização (4))
+A partir de um vértice, sem restrições: Bellman-Ford (5).
+Dentre todos os pares de vértices, sem restrições: Floyd-Warshall (6), ou Johson (7) para digrafos esparsos.
+
+1 - BFS
+2 - minPathDAG
+3 - Dijkstra
+4 - DijkstraModificado
+5 - BellmanFord
+6 - FloydWarshall
+7 - Johson

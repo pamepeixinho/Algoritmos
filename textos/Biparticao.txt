@@ -1,0 +1,4 @@
+Um grafo bipartido ou bicolorido é aquele onde é possível a separação de dois conjuntos tais que todas arestas tenham uma ponta em cada um deles. O problema de classificar um grafo como tal consiste em comprovar a inexistência de cliclos impares (1).
+No caso de digrafos, considerar o problema aplicado ao grafo proveniente da inserção de um arco w-u para cada arco u-w, formando uma aresta.
+
+1 - grafoBipartido

@@ -1,0 +1,3 @@
+A qualidade de articulação é atribuída a um vértice que, caso retirado, aumentaria a desconexidade do grafo.
+Para cada articulação admite-se uma partição de três conjuntos tal que um conjunto contém apenas a articulação e os outros dois não são diretamente conectados entre si; apenas à articulação.
+O grafo que não possui articulações é dito biconexo.

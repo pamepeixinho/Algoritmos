@@ -1,0 +1,2 @@
+É o caminho com o maior peso total entre um par de vértices.
+Além disso, é dito simples pois não passa duas vezes pelo mesmo arco; sem essa distinção, ciclos de peso positivo possibilitariam caminhos de peso infinito.

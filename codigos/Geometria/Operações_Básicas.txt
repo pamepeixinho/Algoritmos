@@ -1,0 +1,3 @@
+Funções básicas usadas em distintos algoritmos (1) tem a representacao de ponto e funções simples:
+
+1- Basicos

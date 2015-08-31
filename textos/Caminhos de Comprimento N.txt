@@ -1,0 +1,4 @@
+Em um digrafo sem ponderação, quantos caminhos com extensão N existem entre cada par de vértices.
+A solução consiste na exponenciação da matriz de adjacência à potência N (1).
+
+1 - ExponenciacaoMatriz
