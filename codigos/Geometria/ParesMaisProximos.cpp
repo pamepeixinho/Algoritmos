@@ -1,20 +1,9 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<cmath>
-#include<cstdio>
-#include<ctime>
+RESUMO PROBLEMA DOS PARES MAIS PROXIMOS
+(1) codigo
+(2) como usar o codigo 
 
-#define DBL_MAX 10000.00 // Limite do problema do uri. Para generalizar, comentar este define e acrescentar a biblioteca <cfloat> e usar a mesma constante "DBL_MAX".
- 
-using namespace std;
- 
-class Ponto{
-    public:
-        double x;
-        double y;
-};
- 
+
+(1)
 bool operator <(Ponto a, Ponto b){
     return a.x < b.x;
 }
@@ -45,7 +34,6 @@ double parDePontosMaisProximos(int a, int b, vector<int> Y){
         return d;
         //retorna a menor distancia
 	}
-	
 	
 	//conta pra dividir no eixo y
     int m = a+(b-a)/2;
@@ -90,37 +78,18 @@ double parDePontosMaisProximos(int a, int b, vector<int> Y){
      
     return md;
 }
- 
-int main(){
 
-//    int n;
-//    double d;
-//    vector<int> Y;
-//    srand(time(NULL));
-//     
-//    cin >> n;
-//     
-//    while(n){
-//        P.resize(n);
-//        Y.resize(n);
-//         
-//        for(int i = 0; i < n; i++){
-//            cin >> P[i].x >> P[i].y;
-//            Y[i] = i;
-//        }
-//             
-//        sort(P.begin(), P.end());
-//        sort(Y.begin(), Y.end(), compP);
-//         
-//        d = parDePontosMaisProximos(0, n, Y);
-//         
-//        if(d < DBL_MAX)
-//            printf("%.4lf\n", d);
-//        else
-//            cout << "INFINITY" << endl;
-//             
-//        cin >> n;
-//    }
-    
-    return 0;
-}
+
+(2)
+    vector<int> Y;
+
+        for(int i = 0; i < n; i++){
+            cin >> P[i].x >> P[i].y;
+            Y[i] = i;
+        }
+             
+        sort(P.begin(), P.end());
+        sort(Y.begin(), Y.end(), compP);
+         
+        d = parDePontosMaisProximos(0, n, Y);
+

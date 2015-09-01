@@ -1,12 +1,14 @@
-#include <cstdio>
-#include <cstdlib>
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <climits>
+Funções básicas usadas em distintos algoritmos tem a representacao de ponto e funções simples:
+	(1)	 representacao do Ponto
+	(2)  Produto Escalar
+	(3)  Produto Vetorial
+	(4)  Produto Vetorial (sinal)
+	(5)  Teste de pertinencia de ponto em segmento 	//TESTAR*****************
+	(6)	 Distancia Euclidiana
+	(7)  Pontos Colineares		//TESTAR*****************
+	
 
-using namespace std;
-
+(1)
 class Ponto{
 	public:
 		int x;
@@ -16,7 +18,8 @@ class Ponto{
 		
 };
 
-//Produto Escalar
+
+(2)
 long long prodEscalar(Ponto origem, Ponto a, Ponto b) {
 	long long v1 = ((long long) a.x-origem.x)*(b.x-origem.x);
 	long long v2 = ((long long) a.y-origem.y)*(b.y-origem.y);
@@ -24,7 +27,7 @@ long long prodEscalar(Ponto origem, Ponto a, Ponto b) {
 	return v1+v2;
 }
 
-//Produto Vetorial
+(3)
 long long prodVetorial(Ponto origem, Ponto a, Ponto b) {
 	long long v1 = ((long long) a.x-origem.x)*(b.y-origem.y);
 	long long v2 = ((long long) a.y-origem.y)*(b.x-origem.x);
@@ -32,7 +35,7 @@ long long prodVetorial(Ponto origem, Ponto a, Ponto b) {
 	return v1-v2;
 }
 
-//Produto Vetorial (sinal)
+(4)
 int prodvetsn(Ponto origem, Ponto a, Ponto b) {
 	long long v1 = ((long long) a.x-origem.x)*(b.y-origem.y);
 	long long v2 = ((long long) a.y-origem.y)*(b.x-origem.x);
@@ -42,27 +45,24 @@ int prodvetsn(Ponto origem, Ponto a, Ponto b) {
 	else return 0;
 }
 
-//teste de pertinencia de ponto em segmento 
+(5) //TESTAR*****************
 bool interPtSeg(Ponto p, Ponto a, Ponto b) {
-	
 	return prodVetorial(p, a, b)==0 && prodEscalar(a, p, b)>=0 && prodEscalar(b, p, a)>=0;
 }
 
-//Teste de Interseção de Segmentos
-//interseção do segmento dos pontos a e b com o segmento c e d
-bool interSegSeg(Ponto a, Ponto b, Ponto c, Ponto d) {
-	int i, r1, r2;
-//	for(i=0; i<2; i++)
-		if( min(a.x,b.x) > max(c.x,d.x) || max(a.x,b.x) < min(c.x,d.x) )
-			return 0;
-		if( min(a.y,b.y) > max(c.y,d.y) || max(a.y,b.y) < min(c.y,d.y) )
-			return 0;
-
-	r1 = prodvetsn(a, c, b) * prodvetsn(a, d, b);
-	r2 = prodvetsn(c, a, d) * prodvetsn(c, b, d);
-	return r1<=0 && r2<=0;
+(6)
+double distancia(Ponto a, Ponto b){
+	return sqrt(pow(b.x - a.x, 2) + pow(b.y - a.y, 2));
 }
 
-int main (){
-	return 0;
+(7)	//TESTAR*****************
+bool ptsColineares(Ponto a, Ponto b, Ponto c){
+	
+	int s = (c.y - b.y) * a.x + (b.x - c.x) * a.y + (c.x * b.y - b.x * c.y);
+	
+    if (s < 0 || s > 0)
+        return false;
+    else
+        return true;
 }
+

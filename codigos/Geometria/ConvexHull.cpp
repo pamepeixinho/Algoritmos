@@ -1,18 +1,7 @@
-/***** ALGORITMO CONVEX-HULL *************************************************/
-//    Dado um grupo de pontos, calcula o menor polígono convexo que abrange a
-//    todos os mesmos.
+TEXTO CONVEXHULL
 
-#include <algorithm>
-#include <vector>
 
-using namespace std;
- 
-class Ponto {
-	public:
-        int x;
-        int y;
-};
-
+(1)
 bool operator <(const Ponto &p1, const Ponto &p2) {
 	return p1.x < p2.x || (p1.x == p2.x && p1.y < p2.y);
 }
@@ -53,8 +42,4 @@ vector<Ponto> convex_hull(vector<Ponto> P)
  
 	H.resize(k);
 	return H;
-}
-
-int main (){
-	return 0;
 }
