@@ -1,6 +1,6 @@
-RESUMO PROBLEMA DOS PARES MAIS PROXIMOS
+Usando o Paradigma de Divisão e Conquista, o problema dos pares mais próximos retorna a menor distância entre dois pares dado um N pontos
 (1) codigo
-(2) como usar o codigo 
+(2) como usar o codigo (Main)
 
 
 (1)
@@ -81,7 +81,9 @@ double parDePontosMaisProximos(int a, int b, vector<int> Y){
 
 
 (2)
-    vector<int> Y;
+int main(){
+	
+ 	   vector<int> Y;
 
         for(int i = 0; i < n; i++){
             cin >> P[i].x >> P[i].y;
@@ -92,4 +94,4 @@ double parDePontosMaisProximos(int a, int b, vector<int> Y){
         sort(Y.begin(), Y.end(), compP);
          
         d = parDePontosMaisProximos(0, n, Y);
-
+}

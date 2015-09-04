@@ -1,4 +1,4 @@
-TEXTO CONVEXHULL
+Convex Hull é o menor polígono convexo que, dado um conjunto disperso de pontos P (vector<Ponto>P), consegue abranger no seu interior todos os pontos do conjunto P com o menor numero de arestas
 
 
 (1)
