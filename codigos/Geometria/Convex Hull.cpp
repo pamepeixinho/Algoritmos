@@ -1,7 +1,7 @@
-Convex Hull é o menor polígono convexo que, dado um conjunto disperso de pontos P (vector<Ponto>P), consegue abranger no seu interior todos os pontos do conjunto P com o menor numero de arestas
+Convex Hull é o menor polígono convexo que, dado um conjunto disperso de pontos P (vector<Ponto>P), 
+consegue abranger no seu interior todos os pontos do conjunto P com o menor numero de arestas
 
 
-(1)
 bool operator <(const Ponto &p1, const Ponto &p2) {
 	return p1.x < p2.x || (p1.x == p2.x && p1.y < p2.y);
 }

@@ -1,13 +1,13 @@
 A representação de Poligonos é a apresentada no (1), algoritmos relacionados com poligonos:
 	(1) Representacao Poligono
-	(2) Area do Poligono	//TESTAR*****************
-	(3) Teste de pertinencia do Ponto no Poligono (isInside()) 	//TESTAR*****************
+	(2) Area do Poligono
+	(3) Teste de pertinencia do Ponto no Poligono (isInside()) 
 
 
 (1)
 vector<Ponto> Poligono;
 
-(2)	//TESTAR*****************
+(2)	
 double areaPoligono(vector<Ponto> Poligono){
     
 	double total = 0;
@@ -19,7 +19,7 @@ double areaPoligono(vector<Ponto> Poligono){
     return total / 2;
 }
 
-(3)	//TESTAR*****************
+(3)	
 #define INF 10000
 // 		Basicos (5) - interPtSeg (q,p,r)
 //		Intersecao(1) -  interSegSeg(p1,q1,p2,q2)
@@ -41,7 +41,7 @@ bool isInside(vector<Ponto> Poligono, Ponto p){
 	
     if (Poligono.size() < 3)  return false;
 
-    Ponto extreme = {INF, p.y};
+    Ponto extreme(INF, p.y);
  
     int count = 0, i = 0;
     

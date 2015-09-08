@@ -1,8 +1,9 @@
 Dada uma string, o algoritmo Longest Palindrome, encontra qual o maior
 palíndromo na mesma. Um palíndromo pode ser composto por apenas um caracter,
 ou seja, toda string com ao menos um caracter possuí um palíndromo.
+Complexidade: O(n^2)
 
-//O(n^2)
+
 string longestPalindromeDP(string s){
   int n = s.length();
   int longestBegin = 0;

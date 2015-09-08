@@ -44,3 +44,4 @@ componentesConexos(vector<vector<Vertice> > &g) {
 	
 	return c; //B
 }
+

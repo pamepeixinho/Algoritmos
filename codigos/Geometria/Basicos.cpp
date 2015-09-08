@@ -3,9 +3,9 @@ Funções básicas usadas em distintos algoritmos tem a representacao de ponto e fu
 	(2)  Produto Escalar
 	(3)  Produto Vetorial
 	(4)  Produto Vetorial (sinal)
-	(5)  Teste de pertinencia de ponto em segmento 	//TESTAR*****************
+	(5)  Teste de pertinencia de ponto em segmento
 	(6)	 Distancia Euclidiana
-	(7)  Pontos Colineares		//TESTAR*****************
+	(7)  Pontos Colineares	
 	
 
 (1)
@@ -45,7 +45,7 @@ int prodvetsn(Ponto origem, Ponto a, Ponto b) {
 	else return 0;
 }
 
-(5) //TESTAR*****************
+(5) 
 bool interPtSeg(Ponto p, Ponto a, Ponto b) {
 	return prodVetorial(p, a, b)==0 && prodEscalar(a, p, b)>=0 && prodEscalar(b, p, a)>=0;
 }
@@ -55,7 +55,7 @@ double distancia(Ponto a, Ponto b){
 	return sqrt(pow(b.x - a.x, 2) + pow(b.y - a.y, 2));
 }
 
-(7)	//TESTAR*****************
+(7)	
 bool ptsColineares(Ponto a, Ponto b, Ponto c){
 	
 	int s = (c.y - b.y) * a.x + (b.x - c.x) * a.y + (c.x * b.y - b.x * c.y);
