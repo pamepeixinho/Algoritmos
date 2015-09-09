@@ -1,5 +1,0 @@
-(1) Construtores
-(2) Métodos
-
-(1) set() // Cria um set vazio
-    set(values, values+5) // Cria um set e preenche-o com o conteúdo de um vetor
