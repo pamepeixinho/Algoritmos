@@ -1,33 +1,3 @@
-#include <iostream>
-#include <string>
-#include <string.h>
-#include <iomanip>
-#include <cfloat>
-#include <climits>
-#include <vector>
-#include <set>
-#include <queue>
-#include <stack>
-#include <map>
-#include <list>
-#include <algorithm>
- 
-using namespace std;
- 
-typedef int Vertice;
-class Aresta {
-public:
-    Vertice v;
-    int p;
-    Aresta(Vertice v, int p) : v(v), p(p) {}
-};
-class ArestaOP {
-public:
-    Vertice o, p;
-    int w;
-    ArestaOP(Vertice o, Vertice p, int w) : o(o), p(p), w(w) {}
-};
-
 vector<vector<Vertice> > g;
 vector<int> pre;
 vector<int> low;
@@ -62,6 +32,7 @@ void dfs(Vertice v) {
    scnum++;
 }
 
+//T: O(n)
 int tarjan() {
     pre.clear();
 	pre.resize(g.size(), -1);
